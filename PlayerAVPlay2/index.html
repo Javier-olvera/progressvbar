@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=1920">
+<meta name="description" content="Example video player application using Tizen webapis.avplay" />
+
+<title>Tizen Video Example App</title>
+
+<script type='text/javascript' src='$WEBAPIS/webapis/webapis.js'></script>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script src="videoPlayer.js"></script>
+<script src="main.js"></script>
+</head>
+
+<body>
+    <object id="av-player" type="application/avplayer"></object>
+    <h1>VCats</h1>
+    
+    <button id="test" class="btn btn-info btn-lg btn-block"  >Gallery</button>
+    
+    <div id="img-cats-border">
+	    <img id="img-cats" src="gatos.jpg">
+	    <img id="img-cats" src="gatos.jpg">
+	    <img id="img-cats" src="gatos.jpg">
+
+    </div>
+    	  <div class="video-control">
+		  <div id="progressbarG"><div id="progressbar"></div></div>
+ 			</div>
+		
+        <div class="video-controls">
+            <div class="play">PLAY</div>
+            <div class="stop">STOP</div>
+            <div class="pause">PAUSE</div>
+            <div class="ff">FF</div>
+            <div class="rew">REW</div>
+            <div class="fullscreen">TOGGLE FULLSCREEN MODE</div>
+            
+        </div>
+       
+     
+ 
+
+    
+</body>
+</html>

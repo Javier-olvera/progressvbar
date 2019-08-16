@@ -1,0 +1,151 @@
+@CHARSET "UTF-8";
+
+body {
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    color: silver;
+    background-image: url('blue.jpg');
+    text-shadow: #000 3px 3px 3px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.05;
+    z-index: -1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 10px;
+    color: lightgray;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+p {
+    margin: 8px 0;
+}
+
+.left, .right {
+    width: 50%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.left {
+    width: 60%;
+}
+
+.right {
+    width: 40%;
+    font-size: 0.9em;
+}
+
+.logs {
+    border: 0px;
+    overflow: auto;
+    font-family: monospace;
+}
+
+fieldset {
+    margin-top: 10px;
+}
+
+#av-player {
+    z-index: -1;
+    width: 854px;
+    height: 480px;
+    display: block;
+    position: fixed;
+    top: 400px;
+    left: 533px;
+}
+
+#av-player.fullscreenMode {
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+    z-index: 1;
+}
+
+.video-controls {
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    width: 854px;
+    height: 40px;
+    border-top: solid 1px #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+    position: fixed;
+    top: 880px;
+    left: 533px;
+}
+
+.video-controls.fullscreenMode {
+    top: 1040px;
+    left: 0;
+    width: 1920px;
+}
+
+.video-controls div {
+    float: left;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.video-controls div.fullscreen {
+    float: right;
+}
+
+#img-cats{
+	margin: 50px;
+	border: 5px solid;
+	
+}
+
+#img-cats-border{
+	margin-left: 354px;
+	margin-top: 15px;
+}
+
+
+
+
+#progressbar {
+  background-color: red;
+  width: 1%;
+  height: 3px;
+  border-radius: 10px; 
+}
+
+.video-control {
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    width: 854px;
+    height: 40px;
+    border-top: solid 1px #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+    position: fixed;
+    top: 870px;
+    left: 533px;
+}
+
